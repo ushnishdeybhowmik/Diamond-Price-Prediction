@@ -2,7 +2,7 @@ import os
 import sys
 
 from src.logger import logging
-from src.exception import CustomException
+from src.exception import DataIngestionError
 
 import pandas as pd 
 from sklearn.model_selection import train_test_split
@@ -50,5 +50,5 @@ class DataIngestion:
             )
         
         except Exception as e:
-            logging.info('Eror occured in data ingestion stage')
+            logging.error(DataIngestionError('Error occured in data ingestion stage'))
             
