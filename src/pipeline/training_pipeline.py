@@ -13,4 +13,4 @@ try:
     print(train_data_path, test_data_path)
 
 except Exception as e:
-    logging.error(DataIngestionError('Error occured in data ingestion stage'))
+    logging.error(DataIngestionError('Error occured in data ingestion/pipeline stage'))
