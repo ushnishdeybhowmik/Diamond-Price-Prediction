@@ -39,7 +39,7 @@ class DataIngestion:
             
             test_set.to_csv(self.ingestion_config.test_data_path, index=False, header=True)
             
-            logging.info('Ingestion of data is completed')
+            logging.info('Ingestion of data completed')
             
 
             
